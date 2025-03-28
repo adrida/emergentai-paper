@@ -16,8 +16,9 @@
 \maketitle
 
 \begin{abstract}
-Beyond AI’s widely acknowledged predictive capabilities lies a profound and underexplored potential: its role as a tool for epistemological discovery. This paper argues for the use of emergent multi-agent AI systems as instruments to uncover novel strategies and deepen human comprehension of complex, self-organizing systems. Inspired by Edgar Morin's concepts of emergence and holistic complexity, and illustrated through recent AI achievements such as AlphaFold \cite{alphafold} and Altera's \cite{altera} spontaneous social simulations, we advocate for a transdisciplinary methodology leveraging explainability techniques. By systematically extracting insights from superhuman AI models, this approach seeks to bring to light previously unkown strategies and concepts to humans, enhancing both scientific discovery and our broader understanding of complex systems.
+Beyond AI’s widely acknowledged predictive capabilities lies a profound and underexplored potential: its role as a tool for epistemological discovery. This paper argues for the use of emergent multi-agent AI systems as instruments to uncover novel strategies and deepen human comprehension of complex, self-organizing systems. Inspired by Edgar Morin's concepts of emergence and holistic complexity, and illustrated through recent AI achievements such as AlphaFold \cite{alphafold} and Altera's \cite{altera} spontaneous social simulations, we advocate for a transdisciplinary methodology leveraging explainability techniques. By systematically extracting insights from superhuman AI models, this approach seeks to bring to light previously unknown strategies and concepts to humans, enhancing both scientific discovery and our broader understanding of complex systems.
 \end{abstract}
+
 
 \section{Introduction}
 Since its inception in the 1950s, AI has transformed how we approach problem-solving by giving us solutions to increasingly complex problems. Being able to model and predict complex phenomena has seen immense application fields across the years, from the United States Postal Service using convolutional neural networks \cite{uspscnn} to parse zip codes all the way to getting close to solving natural language \cite{nltp}.
@@ -37,10 +38,10 @@ He took different examples from biology to sociology and showed that in most cas
 
 Morin's perspective is especially relevant today as we venture into multi-agent AI systems and other models that inherently express emergent properties. The challenge lies not only in creating models that exhibit emergence but also in decoding the underlying principles that give rise to these unexpected behaviors. By adopting Morin's holistic view, we can better appreciate the epistemological value of leveraging AI to explore and understand emergent phenomena in complex systems.
 
-\paragraph{Hard-to-model systems}The next set of hard problems to model for humanity are complex and self-organizing ones. Whether it's protein folding, weather forecast or economical crisis, modeling has become challenging but not impossible. As the statistical George Box said, "All models are wrong, some are useful".
+\paragraph{Hard-to-model systems}The next set of hard problems to model for humanity are complex and self-organizing ones. Whether it's protein folding, weather forecast or economical crisis, modeling has become challenging but not impossible. As the statistician George Box said, "All models are wrong, some are useful".
 
 Significant attempts have been made aiming at modeling chaotic or pseudo-chaotic phenomenon both in academia and in the industry. Most managed to reach performance on-par with top human performers in their respective fields and even sometimes outperform them. 
-Historically, the research community have tried to leverage Conway's Game of Life \cite{conway} to do so. Despite being a discrete system defined by simple rules, the Game of Life shows how complexity and unexpected behavior can emerge from simplicity. More recently, this concept has been extended to the continuous space (Lenia \cite{lenia} and Flow-Lenia \cite{flowlenia}) with the goal of trying to capture and generate creatures that model biological systems more accurately (factoring in dynamics, robustness to perturbation, healing/reconstruction capabilities, and 'reasoning').
+Historically, the research community has tried to leverage Conway's Game of Life \cite{conway} to do so. Despite being a discrete system defined by simple rules, the Game of Life shows how complexity and unexpected behavior can emerge from simplicity. More recently, this concept has been extended to the continuous space (Lenia \cite{lenia} and Flow-Lenia \cite{flowlenia}) with the goal of trying to capture and generate creatures that model biological systems more accurately (factoring in dynamics, robustness to perturbation, healing/reconstruction capabilities, and 'reasoning').
 
 On another note, DeepMind's breakthrough with AlphaFold \cite{alphafold} is another example of successful modeling of an emerging phenomenon from nature. Unlike agent-based modeling or cellular automata like Lenia \cite{lenia} and Flow-Lenia \cite{flowlenia}, AlphaFold relies on deep learning architectures, particularly attention mechanisms, to predict protein structures. This approach is purely data-driven, learning from vast amounts of structural data, rather than simulating interactions between agents or cells and was able to yield impressive results. AlphaFold revolutionized structural biology by being able to accurately predict protein structures from an amino-acid sequence, a long-standing challenge in biology. They showed that AI can achieve superhuman performance in understanding highly complex chaotic systems.
 
@@ -49,7 +50,7 @@ For instance, OpenAI's Five model demonstrated superhuman performance in Dota 2 
 The interesting aspect about video games is that it's relatively easy to interpret as humans what are the strategies used by the agent in front of us. For Dota for example, it could be translated as simply making the decision of buying a specific item and then later down the line realizing that because of this item, there is now a damage gap.
 
 Additionally, Schut et al. \cite{schut} have shown that AlphaZero had learned chess strategies that even grandmasters weren't aware of, and demonstrated these concepts could be successfully taught to top human chess players. McGrath et al. \cite{alphazero-chess} similarly analyzed how the AI system acquired chess concepts during training, with insights from former world champion Vladimir Kramnik.
-More recently, Altera, with their multiagent minecraft environement \cite{altera}, has been able to recreate emerging sociological phenomena without enforcing it at the beginning. This could open the door to exploring phase transitions in these emerging behaviors.
+More recently, Altera, with their multi-agent Minecraft environment \cite{altera}, has been able to recreate emerging sociological phenomena without enforcing it at the beginning. This could open the door to exploring phase transitions in these emerging behaviors.
 
 \paragraph{Explainable (XAI)}The field that studies human-AI interactions and understanding, Explainable AI (XAI), has been flourishing for the past years with an increasing awareness of dangers behind black-box models. Whether it's to detect spurious correlations, mitigate biases or provide actionability (counterfactual reasoning), XAI has become very proficient at extracting knowledge from complex ML models.
 
@@ -58,7 +59,9 @@ By applying TCAV, practitioners can assess the extent to which a concept affects
 
 For example, in medical imaging, TCAV has been employed to interpret deep learning models analyzing physiological data, like electroencephalograms (EEGs). By defining concepts corresponding to specific waveform patterns, researchers can determine how these patterns influence the model's predictions, thereby enhancing trust and facilitating collaboration between AI systems and medical professionals \cite{tcav_eeg}.
 
-This lays the path to what could be an interesting opportunity behind complex systems and AI. Can we use XAI to extract knowledge from those superhuman models to make us more knowledgeable? What if we could, as humans, understand more deeply our universe through them?
+While TCAV traditionally relies on predefined concepts, Ghorbani et al. \cite{ghorbani2019} introduced an unsupervised method that automatically discovers and explains concepts without needing predefined labels.
+
+This lays the path to what could be an interesting opportunity behind complex systems and AI. Can we use XAI to extract knowledge from those superhuman models to make us more knowledgeable? What if we could, as humans, understand our universe more deeply through them?
 More formally, we hypothesize that concept-based interpretability methods applied to emergent multi-agent AI can systematically reveal novel, human-usable strategies in domains such as biology, complex systems, and beyond.
 
 \section{Emergent AI as a discovery engine}
@@ -93,7 +96,7 @@ When AI is approached as a tool for discovery rather than just prediction, emerg
 While most of research and industry have been focusing on automating things, we are missing out on understanding underlying mechanisms of emergence. Ultimately, this can help bring us closer to better understanding our universe and its laws.
 Instead of building superintelligence only to solve hard problems, we propose to work on extracting knowledge from this superintelligence.
 
-We base the following on evidence from Schut et al. work on AlphaZero \cite{schut}, which shows that it's possible to extract novel chess concepts from superhuman AI systems and even transfer this knowledge to top human players. Similarily, McGrath et al. \cite{alphazero-chess} similarly demonstrated how linear probes can extract concepts learned by these models. Finally Kim et al.'s T-CAV \cite{tcav} method provides ways to abstract out concepts from deep learning models. 
+We base the following on evidence from Schut et al. work on AlphaZero \cite{schut}, which shows that it's possible to extract novel chess concepts from superhuman AI systems and even transfer this knowledge to top human players. Similarly, McGrath et al. \cite{alphazero-chess} similarly demonstrated how linear probes can extract concepts learned by these models. Finally Kim et al.'s T-CAV \cite{tcav} method provides ways to abstract out concepts from deep learning models. 
 
 More generally, we propose exploring how we can devise new approaches designed specifically to help extract insights from AI models that teach humans new concepts.
 This new epistemological approach would allow us to leverage AI as a pure discovery engine at the service of humanity.
@@ -112,9 +115,9 @@ Crucially, this approach is not limited to theoretical understanding; it can ser
 
 \paragraph{Application fields} More practically, servicing the power of AI to discovery opens up different wide application fields.
 With such approaches, we could imagine having human-AI strategy transfer. Similarly to what has been done to MOBA video games (\cite{openai_five}, \cite{fair_starcraft}), we could imagine extending it to games that are closer to concepts from other sciences.
-An interesting area to start on this could be to explore any synergies between the DeepMind's SIMA team \cite{sima} or Altera \cite{altera} and Dr Been Kim's team. Extending T-CAV to agents that learn to play in different types of games could help explain the results found by SIMA, namely the fact that an agent trained on different games was still able to perform decently on an unseen game - which abstract concepts were learned and transfered?
+An interesting area to start on this could be to explore any synergies between Deepmind's SIMA team \cite{sima} or Altera \cite{altera} and Dr Been Kim's team also at Deepmind. Extending T-CAV to agents that learn to play in different types of games could help explain the results found by SIMA, namely the fact that an agent trained on different games was still able to perform decently on an unseen game - which abstract concepts were learned and transferred?
 
-Extending it as well to Altera's minecraft agents \cite{altera} would, for instance, help to understand better how emerging patterns appeared - how did agents agree on specific things and took collective decisions? 
+Extending it as well to Altera's minecraft agents \cite{altera} would, for instance, help to understand better how emerging patterns appeared - how did agents agree on specific things and take collective decisions? 
 
 Further down the line, we could learn more about markets (e.g. how financial crises emerge), logistics, or even policymaking (\cite{altera} - was able to reproduce emerging policy making by allowing agents to vote and even influence votes).
 
@@ -234,7 +237,12 @@ N. Baas and C. Emmeche.
 \bibitem{tcav_eeg}
 A. Janik, J. Dodd, G. Ifrim, K. Sankaran, K. Curran.
 \newblock Interpretability of a Deep Learning Model in the Application of Cardiac MRI Segmentation with an ACDC Challenge Dataset.
-\newblock \emph{arXiv preprint arXiv:2103.08590}, 2021.
+
+\bibitem{ghorbani2019}
+A. Ghorbani, J. Wexler, J. Zou, and B. Kim.
+\newblock Towards automatic concept-based explanations.
+\newblock \emph{Advances in Neural Information Processing Systems}, 32, 2019.
+
 
 \end{thebibliography}
 
